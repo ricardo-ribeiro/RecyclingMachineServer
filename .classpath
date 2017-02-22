@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="freetts/mbrola/|freetts/|freetts/bin/|freetts/docs/|freetts/docs/audio/|freetts/docs/images/|freetts/javadoc/|freetts/javadoc/com/sun/speech/engine/synthesis/text/|freetts/javadoc/com/sun/speech/freetts/audio/|freetts/javadoc/com/sun/speech/freetts/cart/|freetts/javadoc/com/sun/speech/freetts/clunits/|freetts/javadoc/com/sun/speech/freetts/diphone/|freetts/javadoc/com/sun/speech/freetts/en/us/|freetts/javadoc/com/sun/speech/freetts/jsapi/|freetts/javadoc/com/sun/speech/freetts/lexicon/|freetts/javadoc/com/sun/speech/freetts/relp/|freetts/javadoc/com/sun/speech/freetts/util/|freetts/javadoc/de/dfki/lt/freetts/en/us/|freetts/javadoc/de/dfki/lt/freetts/mbrola/|freetts/javadoc/resources/|freetts/lib/" kind="src" path="src"/>
+	<classpathentry kind="src" path="src/freetts/mbrola"/>
+	<classpathentry excluding="mbrola/|bin/|docs/|javadoc/|lib/" kind="src" path="src/freetts"/>
+	<classpathentry kind="src" path="src/freetts/bin"/>
+	<classpathentry excluding="audio/|images/" kind="src" path="src/freetts/docs"/>
+	<classpathentry kind="src" path="src/freetts/docs/audio"/>
+	<classpathentry kind="src" path="src/freetts/docs/images"/>
+	<classpathentry excluding="com/sun/speech/engine/synthesis/text/|com/sun/speech/freetts/audio/|com/sun/speech/freetts/cart/|com/sun/speech/freetts/clunits/|com/sun/speech/freetts/diphone/|com/sun/speech/freetts/en/us/|com/sun/speech/freetts/jsapi/|com/sun/speech/freetts/lexicon/|com/sun/speech/freetts/relp/|com/sun/speech/freetts/util/|de/dfki/lt/freetts/en/us/|de/dfki/lt/freetts/mbrola/|resources/" kind="src" path="src/freetts/javadoc"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/engine/synthesis/text"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/audio"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/cart"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/clunits"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/diphone"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/en/us"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/jsapi"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/lexicon"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/relp"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/com/sun/speech/freetts/util"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/de/dfki/lt/freetts/en/us"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/de/dfki/lt/freetts/mbrola"/>
+	<classpathentry kind="src" path="src/freetts/javadoc/resources"/>
+	<classpathentry kind="src" path="src/freetts/lib"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/freetts.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/cmu_time_awb.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/cmu_us_kal.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/cmudict04.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/cmulex.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/cmutimelex.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/en_us.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/freetts-jsapi10.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v0/src/freetts/lib/mbrola.jar"/>
+	<classpathentry kind="lib" path="/Users/ricardo/Documents/University 3rd/MC/ReMachine v1/cis69mc.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
