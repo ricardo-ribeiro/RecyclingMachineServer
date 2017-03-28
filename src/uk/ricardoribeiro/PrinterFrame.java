@@ -15,12 +15,55 @@ import javax.swing.JTextArea;
  *
  */
 public class PrinterFrame extends JInternalFrame implements PrinterInterface{
-	JTextArea output = new JTextArea();
+	static JTextArea output = new JTextArea();
 	private static Color textColour = Color.green;
 	private static Color bgColour = Color.black;
 	private static int textSize = 12;
-	private static String textFont = "Helvetica";
-	private static int textStyle = Font.PLAIN;
+	private static String textFont = "Comic Sans MS";
+	private static int textStyle = Font.BOLD;
+	
+	
+	public static Color getTextColour() {
+		return textColour;
+	}
+	public static void setTextStyle(int textStyle) {
+		PrinterFrame.textStyle = textStyle;
+	}
+
+	public static void setTextColour(Color textColour) {
+		PrinterFrame.textColour = textColour;
+	}
+
+	public static Color getBgColour() {
+		return bgColour;
+	}
+
+	public static void setBgColour(Color bgColour) {
+		PrinterFrame.bgColour = bgColour;
+	}
+
+	public static int getTextSize() {
+		return textSize;
+	}
+
+	public static void setTextSize(int textSize) {
+		PrinterFrame.textSize = textSize;
+	}
+
+	public static String getTextFont() {
+		return textFont;
+	}
+
+	public static void setTextFont(String textFont) {
+		PrinterFrame.textFont = textFont;
+		
+	}
+	public static void update_the_settings()
+	{
+		output.setBackground(bgColour);
+		output.setForeground(textColour);
+		output.setFont(new Font(textFont, textStyle, textSize));
+	}
 	public PrinterFrame() {
 		// TODO Auto-generated constructor stub
 		super("Printer Console",true,true,true);
@@ -36,6 +79,8 @@ public class PrinterFrame extends JInternalFrame implements PrinterInterface{
 	@Override
 	public void print(String receipt) {
 		// TODO Auto-generated method stub
+		FilePrint file = new FilePrint();
+		file.print(receipt);
 		output.setFont(new Font(textFont, textStyle, textSize));
 		System.out.println(textSize);
 		output.setForeground(textColour);

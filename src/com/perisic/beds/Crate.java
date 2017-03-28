@@ -10,10 +10,12 @@ package com.perisic.beds;
 public class Crate extends DepositItem {
 	static int weight = 1516; 
 	static int size = 90; 
+	public static int value = 42;
+	
 	/**
 	 * 
 	 */
 	public Crate() { 
-		value = 42; 
+	
 	}
 }

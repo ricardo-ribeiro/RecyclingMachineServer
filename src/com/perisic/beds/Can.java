@@ -10,11 +10,12 @@ package com.perisic.beds;
 public class Can extends DepositItem {
 	static int weight = 4; 
 	static int size = 5; 
+	public static int value = 16;
 	/**
 	 * 
 	 */
 	public Can() { 
-		value = 16; 
+	
 		//itemName = "Can";
 	}
 }

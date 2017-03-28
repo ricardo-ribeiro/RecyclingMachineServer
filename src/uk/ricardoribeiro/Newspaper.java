@@ -10,12 +10,13 @@ import com.perisic.beds.DepositItem;
  */
 public class Newspaper extends DepositItem {
 	static int weight = 4; 
-	static int size = 5; 
+	static int size = 5;
+	public static int value = 20;
 	/**
 	 * 
 	 */
 	public Newspaper() { 
-		value = 20; 
+	
 		//itemName = "Newspaper";
 	}
 }

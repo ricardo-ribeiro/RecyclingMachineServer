@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 
+import com.perisic.beds.ReceiptBasis;
+
 import java.util.Vector;
 
 /**
@@ -57,7 +59,8 @@ public class CurrentStatusFrame extends JInternalFrame {
 	private boolean isFull(JProgressBar pgrbar) 
 	{
 		// 20-1 because it start from 0
-		if(pgrbar.getValue() > 20 -1 ){
+		System.err.print(Math.floor(ReceiptBasis.Limit/4));
+		if(pgrbar.getValue() > Math.floor(ReceiptBasis.Limit/4) ){
 			//System.out.println(pgrbar.getValue());
 			return true;
 			}

@@ -8,7 +8,11 @@ package com.perisic.beds;
  */
 public abstract class DepositItem {
 	int number; 
-	protected int value; 
+	public static int value; 
+	
+
+
+
 	protected String itemName;
 	
 	/**
@@ -19,4 +23,5 @@ public abstract class DepositItem {
 	{
 		return this.getClass().getSimpleName();
 	}
+	
 }

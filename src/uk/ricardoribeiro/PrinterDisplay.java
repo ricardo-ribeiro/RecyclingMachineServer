@@ -21,7 +21,7 @@ public class PrinterDisplay extends JFrame implements PrinterInterface{
 	private static int textSize = 12;
 	private static String textFont = "Comic Sans MS";
 	private static int textStyle = Font.BOLD;
-	
+	public static JTextArea output = new JTextArea();
 	
 	public static Color getTextColour() {
 		return textColour;
@@ -53,11 +53,18 @@ public class PrinterDisplay extends JFrame implements PrinterInterface{
 
 	public static void setTextFont(String textFont) {
 		PrinterDisplay.textFont = textFont;
+		
+	}
+	public static void update_the_settings()
+	{
+		output.setBackground(bgColour);
+		output.setForeground(textColour);
+		output.setFont(new Font(textFont, textStyle, textSize));
 	}
 
 
 	private static final long serialVersionUID = 238403742294218467L;
-	JTextArea output = new JTextArea();
+
 	public PrinterDisplay()
 	{
 		super();

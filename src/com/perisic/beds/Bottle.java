@@ -11,11 +11,12 @@ package com.perisic.beds;
 public class Bottle extends DepositItem {
 	static int weight = 10; 
 	static int size = 8; 
+	public static int value = 18;
 	/**
 	 * 
 	 */
 	public Bottle() { 
-		value = 18; 
+	
 		//itemName = "Bottle";
 	}
 }

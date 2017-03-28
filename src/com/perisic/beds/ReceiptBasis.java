@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Vector;
 
+import uk.ricardoribeiro.FilePrint;
 import uk.ricardoribeiro.MachineEmptyException;
 import uk.ricardoribeiro.MachineFullExecption;
 import uk.ricardoribeiro.Newspaper; 
@@ -22,7 +23,7 @@ public class ReceiptBasis {
 	 *  (bottle,can.crate)
 	 *  
 	 */
-	public int Limit = 80;
+	public static int Limit = 80;
 	private Vector<DepositItem> myItems = new Vector<DepositItem>();
 	/**
 	 * Add item method. Receives an DepositItem object
@@ -32,7 +33,7 @@ public class ReceiptBasis {
 	 */
 	public void addItem(DepositItem item) throws MachineFullExecption { 
 		// Adding the item into the Vector of Items
-		if(myItems.size() <= Limit)
+		if(myItems.size() < Limit)
 		{
 			myItems.add(item); 
 			// Retrieving the index of the added item and asssigning it to the number value
@@ -54,7 +55,7 @@ public class ReceiptBasis {
 		int sum = 0; 
 		for(int i=0; i < myItems.size(); i++ ) {
 			DepositItem item = myItems.get(i); 
-			receipt = receipt + item.number +": "+item.value; 
+			receipt = receipt + item.number +": "+item; 
 			receipt = receipt + System.getProperty("line.separator");
 			sum = sum + item.value; 
 		}
@@ -90,6 +91,8 @@ public class ReceiptBasis {
 		}
 		receipt += "------------------------------------------\n"; 
 		receipt = receipt + "\t\t    Total: "+sum; 
+		
+		
 		return receipt; 
 	}
 	
@@ -148,7 +151,8 @@ public class ReceiptBasis {
 			receipt += "------------------------------------------\n"; 
 			receipt = receipt + "Number of items: "+ (canOccur+ bottleOccur + crateOccur + newsPaperOccur) +"\t    Total: "+sum; 
 		}
-		
+		FilePrint p = new FilePrint();
+		p.print(receipt);
 		return receipt; 
 		
 		

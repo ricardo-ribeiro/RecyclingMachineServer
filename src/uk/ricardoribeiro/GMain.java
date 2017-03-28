@@ -38,7 +38,7 @@ public class GMain extends JFrame{
 	CustomerPanel myPanel = null; 
 	// Defining and instaciating a new object of the Class CurrentStatusFrame 
 	CurrentStatusFrame currentStatusFrame = new CurrentStatusFrame();
-	
+	public GMain thisClass = this;
 	
 	// Different Printing method initialisation
 	// these methods implement the Printer Interface hence all provide a print method
@@ -273,8 +273,16 @@ public class GMain extends JFrame{
 	    internalFrame_1.getContentPane().setLayout(new GridLayout(0, 1, 0, 0));
 	    internalFrame_1.getContentPane().add(btnPrintReceipt);
 	    
-	    JLabel label = new JLabel("");
-	    internalFrame_1.getContentPane().add(label);
+	    JButton btnTechnicianLogin = new JButton("Technician Login");
+	    btnTechnicianLogin.addActionListener(new ActionListener() {
+	    	public void actionPerformed(ActionEvent e) {
+	    		
+	    		TechnicianLogin tecL = new TechnicianLogin(new xmlapi(thisClass,new Users(),new TechnicalInterventions()));
+	    		
+	    		
+	    	}
+	    });
+	    internalFrame_1.getContentPane().add(btnTechnicianLogin);
 	    internalFrame_1.getContentPane().add(btnSettingsGUI);
 
 	    internalFrame_1.setVisible(true);
