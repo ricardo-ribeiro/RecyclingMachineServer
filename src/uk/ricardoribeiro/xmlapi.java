@@ -96,7 +96,7 @@ public class xmlapi {
 			return "ACK::NOT"; // Let's come to this point later. 
 		}
 	}
-	public String remeber_password(String username) { 
+	public String remeberPassword(String username) { 
 
 		return this.usersObject.forgot_password(username);
 	}

@@ -39,7 +39,7 @@ public interface rmiInterface extends Remote{
 
 	String saveFont(int size, String font, int style)  throws RemoteException;
 	
-    String remeber_password(String username) throws RemoteException;
+    String remeberPassword(String username) throws RemoteException;
 
 
 }
